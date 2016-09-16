@@ -1,0 +1,157 @@
+@import "variables.less";
+
+/* RESPONSIVE GRID START */
+
+//config
+@GRID_PX:           1280;
+@GRID_MAX_WIDTH_PX: 1200;
+@GRID_MIN_WIDTH_PX: 320;
+@GRID_GUTTER_PX:    30;
+
+//calculations
+@GRID_GUTTER_PERCENTAGE: @GRID_GUTTER_PX / @GRID_MAX_WIDTH_PX * 100;
+
+@GRID_MAX_WIDTH_EM: @GRID_MAX_WIDTH_PX / @GLOBAL_FONT_SIZE_PX;
+@GRID_MIN_WIDTH_EM: @GRID_MIN_WIDTH_PX / @GLOBAL_FONT_SIZE_PX;
+
+@GRID_GUTTER_XS_EM: (((@GLOBAL_BP_S_EM    - @GRID_MIN_WIDTH_EM) / 2) + @GRID_MIN_WIDTH_EM);
+@GRID_GUTTER_S_EM:  (((@GLOBAL_BP_M_EM    - @GLOBAL_BP_S_EM)    / 2) + @GLOBAL_BP_S_EM);
+@GRID_GUTTER_M_EM:  (((@GLOBAL_BP_L_EM    - @GLOBAL_BP_M_EM)    / 2) + @GLOBAL_BP_M_EM);
+@GRID_GUTTER_L_EM:  (((@GRID_MAX_WIDTH_EM - @GLOBAL_BP_L_EM)    / 2) + @GLOBAL_BP_L_EM);
+@GRID_GUTTER_XL_EM: (((@GLOBAL_BP_XL_EM   - @GRID_MAX_WIDTH_EM) / 2) + @GRID_MAX_WIDTH_EM);
+
+//mixins
+.width(@col) {
+    width: unit(@col * 100 - @GRID_GUTTER_PERCENTAGE, %);
+    }
+.mb(@val_em) {
+    margin-bottom: unit(@val_em * @GRID_GUTTER_PERCENTAGE / 100 * @GLOBAL_FONT_SIZE_PX, px);
+    margin-bottom: unit(@val_em * @GRID_GUTTER_PERCENTAGE / 100, rem);
+    }
+
+//styling
+body {
+    min-width: unit(@GRID_MIN_WIDTH_PX, px);
+    min-width: unit(@GRID_MIN_WIDTH_EM, rem);
+    }
+    .stripe {
+        padding: 0 unit(@GRID_GUTTER_PX / @GRID_PX * 100, %);
+        }
+        .row {
+            max-width: unit(@GRID_MAX_WIDTH_PX, px);
+            max-width: unit(@GRID_MAX_WIDTH_EM, rem);
+            margin: 0 auto;
+            }
+            .row:after {
+                content: "\0020";
+                display: block;
+                height: 0;
+                clear: both;
+                visibility: hidden;
+                }
+                .col {
+                    display: inline;
+                    float: left;
+                    margin: 0 unit(@GRID_GUTTER_PERCENTAGE / 2, %);
+                    .mb(@GRID_GUTTER_XS_EM);
+                    .row {
+                        margin: 0 unit(@GRID_GUTTER_PERCENTAGE / -2, %);
+                        }
+                    .col:last-child {
+                        margin-bottom: 0;
+                        }
+                    }
+                .nomb .col {
+                    margin-bottom: 0;
+                    }
+                .x12, .x9, .x8, .x6, .x4, .x3 {
+                    .width(1);
+                    }
+
+[id="Kontakt"] .col .col {
+    .mb(@GRID_GUTTER_XS_EM);
+    }
+
+@media only screen and (min-width: unit(@GLOBAL_BP_S_EM, em)) {
+    .col {
+        .mb(@GRID_GUTTER_S_EM);
+        }
+    .x3.x6onS {
+        .width(1 / 2);
+        }
+    [id="Kontakt"] .col .col {
+        .mb(@GRID_GUTTER_S_EM);
+        }
+    }
+
+@media only screen and (min-width: unit(@GLOBAL_BP_M_EM, em)) {
+    .row {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        }
+    .row.block {
+        display: block;
+        }
+        .col {
+            .mb(@GRID_GUTTER_M_EM);
+            .col {
+                margin-bottom: 0;
+                }
+            }
+        .x9 {
+            .width(3 / 4);
+            }
+        .x8 {
+            .width(2 / 3);
+            }
+        .x6 {
+            .width(1 / 2);
+            }
+        .x4 {
+            .width(1 / 3);
+            }
+        .x3 {
+            .width(1 / 4);
+            }
+        .x3.x6onS {
+            .width(1 / 4);
+            }
+        .x3.x4onM {
+            .width(1 / 3);
+            }
+        .x9.x8onM {
+            .width(2 / 3);
+            }
+    [id="Kontakt"] .col .col {
+        .mb(@GRID_GUTTER_M_EM);
+        }
+    }
+
+@media only screen and (min-width: unit(@GLOBAL_BP_L_EM, em)) {
+    .col {
+        .mb(@GRID_GUTTER_L_EM);
+        }
+    .x3.x4onM {
+        .width(1 / 4);
+        }
+    .x9.x8onM {
+        .width(3 / 4);
+        }
+    [id="Kontakt"] .col .col {
+        .mb(@GRID_GUTTER_L_EM);
+        }
+    }
+
+@media only screen and (min-width: unit(@GLOBAL_BP_XL_EM, em)) {
+    .col {
+        .mb(@GRID_GUTTER_XL_EM);
+        }
+    [id="Kontakt"] .col .col {
+        .mb(@GRID_GUTTER_XL_EM);
+        }
+    }
+
+/* SIMPLE RESPONSIVE GRID END */

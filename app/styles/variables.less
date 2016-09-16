@@ -1,0 +1,19 @@
+@GLOBAL_FONT_SIZE_EM: 1;
+@GLOBAL_FONT_SIZE_PX: 16;
+
+@GLOBAL_BP_S_EM: 30; /* 480px */
+@GLOBAL_BP_M_EM: 48; /* 768px */
+@GLOBAL_BP_L_EM: 63; /* 1008px */
+@GLOBAL_BP_XL_EM: 118; /* 1888px */
+
+@GLOBAL_COLOR: #093;
+
+.underline(@colorbg, @colorfg, @bgpos, @bgsz) {
+    background-image: -webkit-linear-gradient(@colorbg 50%, @colorfg 50%);
+    background-image:         linear-gradient(@colorbg 50%, @colorfg 50%);
+
+    background-repeat: repeat-x;
+    background-position: 0 @bgpos;
+    background-size: @bgsz @bgsz;
+    text-decoration: none;
+    }

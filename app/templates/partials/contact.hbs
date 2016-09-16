@@ -1,0 +1,67 @@
+            <article class="stripe meta clearfix" id="Kontakt" role="region" aria-expanded="false">
+                <div class="row">
+                    <div class="col x12">
+                        <h1>Kontakt</h1>
+                        <div id="form-messages-wrapper" class="row" style="display: none;">
+                            <div class="col x3">
+                            </div>
+                            <div class="col x6">
+                                <h2></h2>
+                                <p id="form-messages" class="red"></p>
+                            </div>
+                        </div>
+                        <form id="ajax-contact" method="post" action="mailer.php">
+                            <input class="hidden" name="url" type="text">
+                            <div class="row">
+                                <div class="col x3">
+                                    <label for="contact_name">Name: </label>
+                                </div>
+                                <div class="col x6">
+                                    <input id="contact_name" name="name" type="text" placeholder="Erika Mustermann" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col x3">
+                                    <label for="contact_phone">Telefon: </label>
+                                </div>
+                                <div class="col x6">
+                                    <input id="contact_phone" name="phone" type="tel" placeholder="Mobil oder Festnetz">&nbsp;&nbsp;&nbsp;<span>(optional)</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col x3">
+                                    <label for="contact_email">E-Mail: </label>
+                                </div>
+                                <div class="col x6">
+                                    <input id="contact_email" name="email" type="email" placeholder="example@domain.com" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col x3">
+                                    <label for="contact_subject">Betreff: </label>
+                                </div>
+                                <div class="col x6">
+                                    <input id="contact_subject" name="subject" type="text" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col x3">
+                                    <label for="contact_text">Nachricht: </label>
+                                </div>
+                                <div class="col x6">
+                                    <textarea id="contact_text" name="text" rows="7" cols="70" required></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col x3">
+                                </div>
+                                <div class="col x6">
+                                    <p>
+                                        <button class="cta red" type="submit">Abschicken</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </article>

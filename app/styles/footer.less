@@ -1,0 +1,40 @@
+@import "variables.less";
+
+/* FOOTER START */
+.footer {
+    border-top: 1px solid #aaa;
+    margin-top: 6em;
+    .middle {
+        text-align: center;
+        }
+    .right {
+        text-align: right;
+        }
+    p {
+    color: #999;
+        a {
+            color: #888;
+            text-decoration: none;
+            &:link {
+                color: #777;
+                text-decoration: none;
+                }
+            &:visited {
+                color: #777;
+                text-decoration: none;
+                }
+            &:hover {
+                color: #777;
+                text-decoration: underline;
+                }
+            &:active {
+                color: #777;
+                text-decoration: none;
+                }
+            }
+        }
+    }
+.cssgradients .footer p a:hover {
+    .underline(#777, #fff, 1.15em, 0.25em);
+    }
+/* FOOTER END */

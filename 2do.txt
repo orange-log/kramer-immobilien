@@ -1,0 +1,71 @@
+DONE
+
+- perfect underline -
+- disable active link mobile -
+- mobile menu close on resize -
+- fixed nav -
+- mobile menu close button -
+- fixed meta nav -
+- footer small -
+- aria -
+- 404 -
+- Impressum -
+- ivd und c.e.i -
+- Ihr Serviceteam -
+- Immobilien -
+- Leistungen -
+- Referenzen -
+- Kontakt -
+- normalize "Anfahrt" and "Kontakt" height -
+- immobilien Suche -
+- set up twitter account -
+- tooltip footer -
+- contact form name width -
+- immobilien Sortierung -
+- Fotos Google Drive Grunt task -
+- fallback Foto verbessern -
+- sort einstellungsdatum -
+- originale sortierung -
+- immobilien details -
+- submit button -
+- contact mailer -
+- immobilien suche blur -
+- deeplinking "Anfahrt" and "Kontakt" -
+- immobilien deeplinking -
+- Prominent -> Startseite -
+- remove noindex, nofollow -
+- use proper email address -
+- google analytics -
+
+
+COMMON
+
+
+
+REAL ESTATES
+
+- print
+
+
+BUGS
+
+- IPad Navi bricht um
+- Firefox 3.0?! Icon Font
+
+
+NICE TO HAVE
+
+- komma instead of dot grundstücksfläche
+- fallback Foto verbessern
+- rearrange menu button when meta is open
+- close x needs to be thinner
+
+
+JUST BEFORE LIVE
+
+- isotope license
+- secure restapi-php-sdk-master
+
+AFTER LIVE
+
+- https certifacte

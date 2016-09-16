@@ -1,0 +1,164 @@
+@import "variables.less";
+
+/* HEADER START */
+
+.header.stripe {
+    .col {
+        position: relative;
+        h1 {
+            font-size: 1.7em;
+            color: @GLOBAL_COLOR;
+            }
+        .logo {
+            float: left;
+            margin-bottom: 1em;
+            font-size: unit(@GLOBAL_FONT_SIZE_EM, em);
+            transition: margin-bottom 0.2s ease;
+            img {
+                width: 7em;
+                }
+            }
+        aside {
+            position: absolute;
+            left: 8em;
+            margin-top: 2em;
+            right: 0;
+            display: none;
+            address {
+                font-style: normal;
+                p {
+                    font-size: .95em;
+                    a {
+                        white-space: nowrap;
+                        color: #222;
+                        text-decoration: none;
+                        font-size: 1em;
+                        &:link {
+                            color: #222;
+                            text-decoration: none;
+                            }
+                        &:visited {
+                            color: #222;
+                            text-decoration: none;
+                            }
+                        &:hover {
+                            color: #222;
+                            text-decoration: underline;
+                            }
+                        &:active {
+                            color: #222;
+                            text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            table {
+                th {
+                    font-weight: normal;
+                    text-align: left;
+                    min-width: 4.5em;
+                    font-size: .95em;
+                    }
+                td {
+                    font-size: .95em;
+                    }
+                }
+            }
+        nav {
+            float: right;
+            a {
+                color: #888;
+                text-decoration: none;
+                margin-left: 1em;
+                &:link {
+                    color: #777;
+                    text-decoration: none;
+                    }
+                &:visited {
+                    color: #777;
+                    text-decoration: none;
+                    }
+                &:hover {
+                    color: #777;
+                    text-decoration: underline;
+                    }
+                &:active {
+                    color: #777;
+                    text-decoration: none;
+                    }
+                }
+            }
+        .fixedwrap {
+            float: right;
+            }
+        }
+    }
+
+.header.stripe.addr-open .col .logo {
+    margin-bottom: 5em;
+    }
+.no-js .header.stripe .col aside,
+.header.stripe.addr-open .col aside {
+    display: block;
+    }
+.cssgradients .header.stripe .col aside address p a:hover,
+.cssgradients .header.stripe .col nav a:hover {
+    .underline(#777, #fff, 1.15em, 0.25em);
+    }
+
+@media only screen and (min-width: unit(@GLOBAL_BP_M_EM, em)) {
+    .header.stripe {
+        .col {
+            padding-top: 2em;
+            h1 {
+                display: inline;
+                margin-left: 1em;
+                }
+            aside {
+                left: 8.75em;
+                margin: 0;
+                }
+            }
+        }
+    .header.stripe.addr-open .col .logo {
+        margin-bottom: 7em;
+        }
+    }
+
+@media only screen and (min-width: unit(@GLOBAL_BP_L_EM, em)) {
+    .header.stripe {
+        .col {
+            aside {
+                margin: 2.5em -.5em;
+                address {
+                    p {
+                        float: left;
+                        margin: .5em;
+                        }
+                    }
+                table {
+                    float: left;
+                    margin: .5em;
+                    }
+                }
+            .fixed {
+                position: fixed;
+                z-index: 10000;
+                top: 1.125em;
+                height: 0;
+                margin: 0 auto;
+                max-width: 75rem;
+                left: 2.34375%;
+                right: 2.34375%;
+                nav {
+                    margin-right: 1.25%;
+                    }
+                }
+            }
+        }
+    .header.stripe.addr-open .col .logo {
+        margin-bottom: 1em;
+        }
+    }
+
+/* HEADER END */

@@ -1,0 +1,16 @@
+            <nav role="navigation" class="stripe navi">
+                <div class="fixedwrap">
+                    <div class="row nomb">
+                        <div class="col x12">
+                            <a class="mm-trigger" href="#" title="Menü" role="button" aria-controls="menu"></a>
+                            <ul id="menu" class="clearfix" aria-expanded="false">
+                                <li{{#is basename "index"}} class="active"{{/is}}><a class="home" title="Startseite" href="index.html"><span>Startseite</span></a></li>
+                                <li{{#is basename "service"}} class="active"><a{{else}}><a href="service.html"{{/is}}>Ihr Serviceteam</a></li>
+                                <li{{#is basename "immobilien"}} class="active"><a{{else}}><a href="immobilien.html"{{/is}}>Immobilien</a></li>
+                                <li{{#is basename "leistungen"}} class="active"><a{{else}}><a href="leistungen.html"{{/is}}>Leistungen</a></li>
+                                {{!--<li{{#is basename "referenzen"}} class="active"><a{{else}}><a href="referenzen.html"{{/is}}>Referenzen</a></li>--}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>

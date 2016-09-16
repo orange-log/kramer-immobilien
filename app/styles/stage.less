@@ -1,0 +1,85 @@
+@import "variables.less";
+
+/* STAGE START */
+
+.stage {
+    font-size: .5em;
+    .wrapper {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 24.6875em;
+        overflow: hidden;
+        z-index: -1;
+        padding-left: 50%;
+        img {
+            position: absolute;
+            margin-left: -40em;
+            height: 24.6875em;
+            }
+        }
+    .htb {
+        margin-top: 18em;
+        font-size: 1.5em;
+        }
+    }
+
+@media only screen and (min-width: unit(@GLOBAL_BP_S_EM, em)) {
+    .stage {
+        font-size: .7em;
+        .htb {
+            font-size: 1.071em;
+            margin-top: 24em;
+            }
+        }
+    }
+
+@media only screen and (min-width: unit(@GLOBAL_BP_M_EM, em)) {
+    .stage {
+        font-size: .83em;
+        .htb {
+            font-size: 0.9035em;
+            background: #fff;
+            background: rgba(255, 255, 255, 0.90);
+            width: 50%;
+            height: 20em;
+            margin: 4em 0 3.34em 0;
+            padding: .5em 2em;
+            position: relative;
+            overflow: hidden;
+            h1 {
+                height: 5.75em;
+                overflow: hidden;
+                }
+            .cta {
+                position: absolute;
+                right: 1em;
+                height: 1.8em;
+                bottom: .75em;
+                white-space: nowrap;
+                overflow: hidden;
+                -o-text-overflow: ellipsis;
+                   text-overflow: ellipsis;
+                max-width: 90%;
+                }
+            }
+        }
+    }
+    .lt-ie9 .stage .htb .cta {
+        max-width: 80%;
+        }
+
+@media only screen and (min-width: unit(@GLOBAL_BP_L_EM, em)) {
+    .stage {
+        font-size: 1em;
+        .htb {
+            font-size: 0.75em;
+            margin-bottom: 8.92em;
+            }
+        }
+    }
+
+@media only screen and (min-width: unit(@GLOBAL_BP_XL_EM, em)) {
+    }
+
+/* STAGE END */

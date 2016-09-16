@@ -1,0 +1,149 @@
+@import "variables.less";
+
+/* ISOTOPE START */
+.sort,
+.quicksearch {
+    width: 100%;
+    }
+.isotope {
+    margin-left: -1em;
+    .item {
+        background: #fff;
+        &__details {
+            margin: 5.9em 0 5.9em 1em;
+            position: relative;
+        }
+        &__detailsClose {
+            text-indent: -9999px;
+            overflow: hidden;
+            height: 4.5em;
+            width: 4.5em;
+            position: absolute;
+            right: .125em;
+            top: -4.125em;
+            display: block;
+            &:after {
+                content: '\e800';
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                font-size: 4em;
+                text-indent: 0;
+                text-decoration: none;
+                color: #222;
+            }
+            &--bottom {
+                top: auto;
+                bottom: -4.125em;
+            }
+        }
+        &.INACTIVE {
+            opacity: .3;
+            .inner {
+                cursor: default;
+                &:hover {
+                    background: none;
+                }
+            }
+            .showDetails {
+                display: none;
+            }
+        }
+        .inner {
+            width: 22em;
+            height: 30em;
+            margin: 1em .5em;
+            padding: 1em .5em;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            &__imgWrapper {
+                position: relative;
+            }
+            &:hover {
+                background: rgba(0, 153, 51, .2);
+            }
+            h2, h3 {
+                margin: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                }
+            img {
+                width: 100%;
+                margin-top: .2em;
+                }
+            ul {
+                background: @GLOBAL_COLOR;
+                list-style: none;
+                padding: 0;
+                color: white;
+                font-weight: bold;
+                padding: 1em .5em;
+                margin: 0;
+                min-height: 8em;
+                }
+                a {
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    height: 2.5em;
+                    width: 2.5em;
+                    padding-right: .5em;
+                    overflow: hidden;
+                    text-indent: -9999px;
+                    opacity: .75;
+                    &:after {
+                        content: '\e808';
+                        display: block;
+                        position: absolute;
+                        top: .6em;
+                        left: -.1em;
+                        text-indent: 0;
+                        color: #fff;
+                        font-size: 2em;
+                    }
+                }
+            }
+        }
+    }
+
+@media only screen and (min-width: unit(@GLOBAL_BP_S_EM, em)) {
+    .isotope .item .inner {
+        width: 14.5em;
+        height: 25em;
+        ul {
+            min-height: 9em;
+            }
+        }
+    }
+
+@media only screen and (min-width: unit(@GLOBAL_BP_M_EM, em)) {
+    .immobilien .x3 {
+        text-align: right;
+        }
+    .isotope .item .inner {
+        width: 22em;
+        height: 29em;
+        ul {
+            min-height: 8em;
+            }
+        }
+    }
+
+@media only screen and (min-width: unit(@GLOBAL_BP_L_EM, em)) {
+    .isotope .item .inner {
+        width: 17em;
+        height: 25em;
+        }
+    }
+
+@media only screen and (min-width: unit(@GLOBAL_BP_XL_EM, em)) {
+    .isotope .item .inner {
+        width: 18em;
+        height: 24em;
+        }
+    }
+
+/* ISOTOPE END */

@@ -1,0 +1,303 @@
+                <article class="stripe">
+                    {{#if [expose.expose]}}
+                        <div class="row">
+                            <div class="col x8">
+                                <div class="imgal">
+                                    <figure class="imgal__figure imgal__figure--large">
+                                        <a id="imgal__openlink" href="{{replaceStr [expose.expose].realEstate.titlePicture.urls.0.url.4.[@href] '%WIDTH%' '800' '%HEIGHT%' '600'}}">
+                                            <img id="imgal-img" class="imgal__img" width="570" height="429" alt="" src="{{replaceStr [expose.expose].realEstate.titlePicture.urls.0.url.4.[@href] '%WIDTH%' '570' '%HEIGHT%' '429'}}">
+                                        </a>
+                                        <!--figcaption class="imgal__caption">{{[expose.expose].realEstate.titlePicture.title}}</figcaption-->
+                                    </figure>
+                                    <div class="imgal__thumbs clearfix">
+                                        {{#each [expose.expose].realEstate.attachments}}
+                                            {{#each this.attachment}}
+                                                <figure class="imgal__figure">
+                                                    <img data-imgal-medium="{{replaceStr this.urls.0.url.4.[@href] '%WIDTH%' '570' '%HEIGHT%' '429'}}" data-imgal-zoom="{{replaceStr this.urls.0.url.4.[@href] '%WIDTH%' '800' '%HEIGHT%' '600'}}" class="imgal__img imgal__img--thumb" width="80" height="60" alt="" src="{{replaceStr this.urls.0.url.4.[@href] '%WIDTH%' '80' '%HEIGHT%' '60'}}">
+                                                    <!--figcaption>{{this.title}}</figcaption-->
+                                                </figure>
+                                            {{/each}}
+                                        {{/each}}
+                                    </div>
+                                </div>
+                                {{#if [expose.expose].realEstate.lift}}
+                                    {{#contains [expose.expose].realEstate.lift "true"}}
+                                        <span class="keyword">Personenaufzug</span>
+                                    {{/contains}}
+                                {{/if}}
+                                {{#if [expose.expose].realEstate.lodgerFlat}}
+                                    {{#contains [expose.expose].realEstate.lodgerFlat "YES"}}
+                                        <span class="keyword">Einliegerwohnung</span>
+                                    {{/contains}}
+                                {{/if}}
+                                {{#if [expose.expose].realEstate.cellar}}
+                                    {{#contains [expose.expose].realEstate.cellar "YES"}}
+                                        <span class="keyword">Keller</span>
+                                    {{/contains}}
+                                {{/if}}
+                                {{#if [expose.expose].realEstate.handicappedAccessible}}
+                                    {{#contains [expose.expose].realEstate.handicappedAccessible "YES"}}
+                                        <span class="keyword">Stufenloser Zugang</span>
+                                    {{/contains}}
+                                {{/if}}
+                                {{#if [expose.expose].realEstate.guestToilet}}
+                                    {{#contains [expose.expose].realEstate.guestToilet "YES"}}
+                                        <span class="keyword">Gäste-WC</span>
+                                    {{/contains}}
+                                {{/if}}
+                                {{#if [expose.expose].realEstate.builtInKitchen}}
+                                    {{#contains [expose.expose].realEstate.builtInKitchen "true"}}
+                                        <span class="keyword">Einbauküche</span>
+                                    {{/contains}}
+                                {{/if}}
+                                {{#if [expose.expose].realEstate.balcony}}
+                                    {{#contains [expose.expose].realEstate.balcony "true"}}
+                                        <span class="keyword">Balkon/ Terrasse</span>
+                                    {{/contains}}
+                                {{/if}}
+                                <h1>{{[expose.expose].realEstate.title}}</h1>
+                                <!--sup>{{[expose.expose].realEstate.address.postcode}} {{[expose.expose].realEstate.address.city}} {{[expose.expose].realEstate.address.quarter}}</sup-->
+                                <sup>{{[expose.expose].realEstate.address.postcode}} {{[expose.expose].realEstate.address.quarter}}</sup>
+                                <p>{{[expose.expose].realEstate.descriptionNote}}</p>
+                                <p>{{[expose.expose].realEstate.furnishingNote}}</p>
+                            </div>
+                            <div class="col x4">
+                                <div class="keyfacts">
+                                    {{#if [expose.expose].realEstate.price.value}}
+                                    <div class="keyfacts__item">
+                                        <div class="keyfacts__label">
+                                            Kaufpreis
+                                        </div>
+                                        <div class="keyfacts__keyfact">
+                                            {{[expose.expose].realEstate.price.value}}€
+                                        </div>
+                                    </div>
+                                    {{/if}}
+                                    {{#if [expose.expose].realEstate.baseRent}}
+                                    <div class="keyfacts__item">
+                                        <div class="keyfacts__label">
+                                            Kaltmiete
+                                        </div>
+                                        <div class="keyfacts__keyfact">
+                                            {{[expose.expose].realEstate.baseRent}}€
+                                        </div>
+                                    </div>
+                                    {{/if}}
+                                    {{#if [expose.expose].realEstate.livingSpace}}
+                                    <div class="keyfacts__item">
+                                        <div class="keyfacts__label">
+                                            Wohnfläche
+                                        </div>
+                                        <div class="keyfacts__keyfact">
+                                            {{[expose.expose].realEstate.livingSpace}}m²
+                                        </div>
+                                    </div>
+                                    {{/if}}
+                                    {{#if [expose.expose].realEstate.numberOfRooms}}
+                                    <div class="keyfacts__item">
+                                        <div class="keyfacts__label">
+                                            Zimmer
+                                        </div>
+                                        <div class="keyfacts__keyfact">
+                                            {{[expose.expose].realEstate.numberOfRooms}}
+                                        </div>
+                                    </div>
+                                    {{/if}}
+                                    {{#if [expose.expose].realEstate.plotArea}}
+                                        <div class="keyfacts__item">
+                                            <div class="keyfacts__label">
+                                                Grundstück
+                                            </div>
+                                            <div class="keyfacts__keyfact">
+                                                {{[expose.expose].realEstate.plotArea}}m²
+                                            </div>
+                                        </div>
+                                    {{/if}}
+                                </div>
+                                <a class="cta cta--details" href="immobilien.html">Anfrage starten</a>
+                                {{#if [expose.expose].realEstate.numberOfFloors}}
+                                    <dl class="details clearfix">
+                                        <dt class="details__label">Etagen&shy;anzahl</dt>
+                                        <dd class="details__value">{{[expose.expose].realEstate.numberOfFloors}}</dd>
+                                    </dl>
+                                {{/if}}
+                                {{#if [expose.expose].realEstate.usableFloorSpace}}
+                                    <dl class="details clearfix">
+                                        <dt class="details__label">Nutz&shy;fläche ca.</dt>
+                                        <dd class="details__value">{{[expose.expose].realEstate.usableFloorSpace}}m²</dd>
+                                    </dl>
+                                {{/if}}
+                                {{#if [expose.expose].realEstate.numberOfBedRooms}}
+                                    <dl class="details clearfix">
+                                        <dt class="details__label">Schlaf&shy;zimmer</dt>
+                                        <dd class="details__value">{{[expose.expose].realEstate.numberOfBedRooms}}</dd>
+                                    </dl>
+                                {{/if}}
+                                {{#if [expose.expose].realEstate.numberOfBathRooms}}
+                                    <dl class="details clearfix">
+                                        <dt class="details__label">Bade&shy;zimmer</dt>
+                                        <dd class="details__value">{{[expose.expose].realEstate.numberOfBathRooms}}</dd>
+                                    </dl>
+                                {{/if}}
+                                {{#if [expose.expose].realEstate.parkingSpaceType}}
+                                    <dl class="details clearfix">
+                                        <dt class="details__label">Garage/ Stell&shy;platz</dt>
+                                        {{#contains [expose.expose].realEstate.parkingSpaceType "GARAGE"}}
+                                            <dd class="details__value">Garage</dd>
+                                        {{/contains}}
+                                        {{#contains [expose.expose].realEstate.parkingSpaceType "OUTSIDE"}}
+                                            <dd class="details__value">Außen&shy;stell&shy;platz</dd>
+                                        {{/contains}}
+                                    </dl>
+                                {{/if}}
+                                {{#if [expose.expose].realEstate.numberOfParkingSpaces}}
+                                    <dl class="details clearfix">
+                                        <dt class="details__label">Anzahl Garage/ Stell&shy;platz</dt>
+                                        <dd class="details__value">{{[expose.expose].realEstate.numberOfParkingSpaces}}</dd>
+                                    </dl>
+                                {{/if}}
+
+
+                                {{#if [expose.expose].realEstate.address.wgs84Coordinate}}
+                                    <div id="{{[expose.expose].realEstate.[@id]}}-map" class="details__map" data-lat="{{[expose.expose].realEstate.address.wgs84Coordinate.latitude}}" data-lng="{{[expose.expose].realEstate.address.wgs84Coordinate.longitude}}"></div>
+                                {{/if}}
+
+
+                                {{#if [expose.expose].realEstate.constructionYear}}
+                                    <dl class="details clearfix">
+                                        <dt class="details__label">Baujahr</dt>
+                                        <dd class="details__value">{{[expose.expose].realEstate.constructionYear}}</dd>
+                                    </dl>
+                                {{/if}}
+                                {{#if [expose.expose].realEstate.lastRefurbishment}}
+                                    <dl class="details clearfix">
+                                        <dt class="details__label">Letzte Moderni&shy;sierung/ Sanierung</dt>
+                                        <dd class="details__value">{{[expose.expose].realEstate.lastRefurbishment}}</dd>
+                                    </dl>
+                                {{/if}}
+                                {{#if [expose.expose].realEstate.condition}}
+                                    {{#isnt [expose.expose].realEstate.condition "NO_INFORMATION"}}
+                                        <dl class="details clearfix">
+                                            <dt class="details__label">Objekt&shy;zustand</dt>
+                                            {{#contains [expose.expose].realEstate.condition "MODERNIZED"}}
+                                                <dd class="details__value">Modernisiert</dd>
+                                            {{/contains}}
+                                            {{#contains [expose.expose].realEstate.condition "FULLY_RENOVATED"}}
+                                                <dd class="details__value">Vollständig renoviert</dd>
+                                            {{/contains}}
+                                            {{#contains [expose.expose].realEstate.condition "WELL_KEPT"}}
+                                                <dd class="details__value">Gepflegt</dd>
+                                            {{/contains}}
+                                            {{#contains [expose.expose].realEstate.condition "NEED_OF_RENOVATION"}}
+                                                <dd class="details__value">Re&shy;no&shy;vier&shy;ungs&shy;be&shy;dürftig</dd>
+                                            {{/contains}}
+                                        </dl>
+                                    {{/isnt}}
+                                {{/if}}
+                                {{#if [expose.expose].realEstate.interiorQuality}}
+                                    <dl class="details clearfix">
+                                        <dt class="details__label">Qualität der Aus&shy;stattung</dt>
+                                        {{#contains [expose.expose].realEstate.interiorQuality "SOPHISTICATED"}}
+                                            <dd class="details__value">Gehoben</dd>
+                                        {{/contains}}
+                                        {{#contains [expose.expose].realEstate.interiorQuality "SIMPLE"}}
+                                            <dd class="details__value">Einfach</dd>
+                                        {{/contains}}
+                                    </dl>
+                                {{/if}}
+                                {{#if [expose.expose].realEstate.firingTypes.0.firingType}}
+                                    {{#isnt [expose.expose].realEstate.firingTypes.0.firingType "NO_INFORMATION"}}
+                                        <dl class="details clearfix">
+                                            <dt class="details__label">Heizungs&shy;art</dt>
+                                            {{#contains [expose.expose].realEstate.firingTypes.0.firingType "GAS"}}
+                                                <dd class="details__value">Gas-Hei&shy;zung</dd>
+                                            {{/contains}}
+                                        </dl>
+                                    {{/isnt}}
+                                {{/if}}
+                                {{#if [expose.expose].realEstate.energyCertificate.energyEfficiencyClass}}
+                                    <dl class="details clearfix">
+                                        <dt class="details__label">Energie&shy;effizienz&shy;klasse</dt>
+                                        <dd class="details__value">{{[expose.expose].realEstate.energyCertificate.energyEfficiencyClass}}</dd>
+                                    </dl>
+                                {{/if}}
+
+
+
+                                <a class="cta cta--details" href="immobilien.html">Anfrage starten</a>
+
+
+
+                                <dl class="details clearfix">
+                                    <dt class="details__label">Provision für Käufer</dt>
+                                    {{#contains [expose.expose].realEstate.courtage.hasCourtage "YES"}}
+                                        <dd class="details__value">{{[expose.expose].realEstate.courtage.courtage}}</dd>
+                                    {{else}}
+                                        <dd class="details__value">Nein</dd>
+                                    {{/contains}}
+                                </dl>
+
+
+
+                                <!--
+                                <dl class="details clearfix">
+                                    <dt class="details__label">buildingEnergyRatingType</dt>
+                                    <dd class="details__value">{{[expose.expose].realEstate.buildingEnergyRatingType}}</dd>
+                                    <dt class="details__label">thermalCharacteristic</dt>
+                                    <dd class="details__value">{{[expose.expose].realEstate.thermalCharacteristic}}</dd>
+                                    <dt class="details__label">energyConsumptionContainsWarmWater</dt>
+                                    <dd class="details__value">{{[expose.expose].realEstate.energyConsumptionContainsWarmWater}}</dd>
+                                    <dt class="details__label">floorplan</dt>
+                                    <dd class="details__value">{{[expose.expose].realEstate.floorplan}}</dd>
+                                    <dt class="details__label">constructionPhase</dt>
+                                    <dd class="details__value">{{[expose.expose].realEstate.constructionPhase}}</dd>
+                                    <dt class="details__label">buildingType</dt>
+                                    <dd class="details__value">{{[expose.expose].realEstate.buildingType}}</dd>
+                                    <dt class="details__label">rented</dt>
+                                    <dd class="details__value">{{[expose.expose].realEstate.rented}}</dd>
+                                    <dt class="details__label">listed</dt>
+                                    <dd class="details__value">{{[expose.expose].realEstate.listed}}</dd>
+                                    <dt class="details__label">summerResidencePractical</dt>
+                                    <dd class="details__value">{{[expose.expose].realEstate.summerResidencePractical}}</dd>
+                                    <dt class="details__label">energyPerformanceCertificate</dt>
+                                    <dd class="details__value">{{[expose.expose].realEstate.energyPerformanceCertificate}}</dd>
+                                    <dt class="details__label">energyCertificate</dt>
+                                    <dd class="details__value">{{[expose.expose].realEstate.energyCertificate.energyCertificateAvailability}}</dd>
+                                    <dd class="details__value">{{[expose.expose].realEstate.energyCertificate.energyCertificateCreationDate}}</dd>
+                                    <dt class="details__label">energySourcesEnev2014</dt>
+                                    <dd class="details__value">{{[expose.expose].realEstate.energySourcesEnev2014.energySourceEnev2014}}</dd>
+                                    <dt class="details__label">heatingTypeEnev2014</dt>
+                                    <dd class="details__value">{{[expose.expose].realEstate.heatingTypeEnev2014}}</dd>
+                                    <dt class="details__label">Provision für Käufer</dt>
+                                    <dd class="details__value">{{[expose.expose].realEstate.courtage.hasCourtage}}</dd>
+                                </dl>
+
+
+
+                                <dl class="details clearfix">
+                                    <dt class="details__label">Zimmer</dt>
+                                    <dd class="details__value">{{[expose.expose].realEstate.numberOfRooms}}</dd>
+                                    <dt class="details__label">Wohnfläche ca. </dt>
+                                    <dd class="details__value">{{[expose.expose].realEstate.livingSpace}}</dd>
+                                    <dt class="details__label">Grundstücksfläche ca. </dt>
+                                    <dd class="details__value">{{[expose.expose].realEstate.plotArea}}</dd>
+                                    <dt class="details__label">price</dt>
+                                    <dd class="details__value">{{[expose.expose].realEstate.price.value}}</dd>
+                                    <dd class="details__value">{{[expose.expose].realEstate.price.currency}}</dd>
+                                    <dd class="details__value">{{[expose.expose].realEstate.price.marketingType}}</dd>
+                                    <dd class="details__value">{{[expose.expose].realEstate.price.priceIntervalType}}</dd>
+                                </dl>
+
+
+
+                                -->
+                            </div>
+                        </div>
+                    {{else}}
+                    <div class="row">
+                        <div class="col x9">
+                            <p>Die Immobilie konnte nicht gefunden werden.</p>
+                        </div>
+                    </div>
+                    {{/if}}
+                </article>

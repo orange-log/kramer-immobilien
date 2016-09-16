@@ -1,0 +1,116 @@
+---
+title: "Immobilien Angebote − Kramer Immobilien Makler"
+description: "Baugrundstück | Eigentumswohnung | Garage | Haus | Mietwohnung"
+---
+
+                <article class="stripe immobilien">
+                    <div class="row">
+                        <div class="col x9">
+                            <h1>Aktuelle Immobilien-Angebote</h1>
+                        </div>
+                    </div>
+                    {{#if immobilien}}
+                    <!--div class="row">
+                        <div class="col x3">
+                            <label for="quicksearch">Suche:</label>
+                        </div>
+                        <div class="col x6">
+                            <input type="text" role="search" class="quicksearch" id="quicksearch" placeholder="Geben Sie ein Suchbegriff ein, z. B. Ort oder PLZ." />
+                        </div>
+                    </div-->
+                    <div class="row">
+                        <div class="col x3">
+                            <span for="filters">Filter:</span>
+                        </div>
+                        <div class="col x8">
+                            <div class="button-group" id="filters">
+                                <button data-filter="*">Alle</button>
+                                <!--button data-filter=".OfferLivingBuySite"><strong>Baugrundstück</strong></button-->
+                                <button data-filter=".OfferApartmentBuy"><strong>Eigentumswohnung</strong></button>
+                                <!--button data-filter=".OfferGarageRent"><strong>Garage</strong></button-->
+                                <button data-filter=".OfferHouseBuy"><strong>Haus</strong></button>
+                                <!--button data-filter=".OfferInvestment"><strong>Investment</strong></button-->
+                                <!--button data-filter=".OfferHouseRent"><strong>Mietshaus</strong></button-->
+                                <button data-filter=".OfferApartmentRent"><strong>Mietwohnung</strong></button>
+                                <button data-filter=".OfferOffice"><strong>Bürohaus</strong></button>
+                                <!--button data-filter=".OfferSpecialPurpose"><strong>Sonderzweck</strong></button-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col x3">
+                            <label for="sort">Sortierung (absteigend):</label>
+                        </div>
+                        <div class="col x6">
+                            <div class="select-wrapper">
+                                <select class="sort" id="sort">
+                                    <option value="original" data-sort-value="original">originale Sortierung</option>
+                                    <option value="creation" data-sort-value="creation">Einstellungsdatum</option>
+                                    <option value="buyPrice" data-sort-value="buyPrice">Kaufpreis</option>
+                                    <option value="rentPrice" data-sort-value="rentPrice">Mietpreis</option>
+                                    <option value="rooms" data-sort-value="rooms">Zimmer</option>
+                                    <option value="livingSpace" data-sort-value="livingSpace">Wohnfläche</option>
+                                    <option value="plotArea" data-sort-value="plotArea">Grundstücksfläche</option>
+                                    <option value="totalFloorSpace" data-sort-value="totalFloorSpace">Bodenfläche</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col x12">
+                            <div id="isotope" class="isotope">
+                                {{#each immobilien}}{{#each this.realEstateList}}{{#each this}}
+                                    {{#contains realEstateState "INACTIVE"}}
+                                    {{else}}
+                                        <div class="item {{replaceStr [@xsi.type] 'offerlistelement:' '' 'xxxxx' 'yyyyy'}} {{realEstateState}}" data-category="{{replaceStr [@xsi.type] 'offerlistelement:' '' 'xxxxx' 'yyyyy'}}" data-creation="{{[@creation]}}" data-original-order="{{@index}}" data-id="{{[@id]}}">
+                                            <div class="inner">
+                                                <h2>
+                                                    <strong>
+                                                    {{#contains [@xsi.type] "OfferLivingBuySite"}}Baugrundstück{{/contains}}
+                                                    {{#contains [@xsi.type] "OfferApartmentBuy"}}Eigentumswohnung{{/contains}}
+                                                    {{#contains [@xsi.type] "OfferHouseBuy"}}Haus{{/contains}}
+                                                    {{#contains [@xsi.type] "OfferInvestment"}}Investment{{/contains}}
+                                                    {{#contains [@xsi.type] "OfferHouseRent"}}Mietshaus{{/contains}}
+                                                    {{#contains [@xsi.type] "OfferApartmentRent"}}Mietwohnung{{/contains}}
+                                                    {{#contains [@xsi.type] "OfferSpecialPurpose"}}Sonderzweck{{/contains}}
+                                                    {{#contains [@xsi.type] "OfferGarageRent"}}Garage{{/contains}}
+                                                    {{#contains [@xsi.type] "OfferOffice"}}Bürohaus{{/contains}}
+                                                    </strong>
+                                                </h2>
+                                                <h3>{{address.postcode}} {{address.city}}</h3>
+                                                <div class="inner__imgWrapper">
+                                                    {{#if titlePicture.urls.0.url.2.[@href]}}
+                                                        <img width="256" height="171" alt="" src="{{replaceStr titlePicture.urls.0.url.2.[@href] '%WIDTH%' '256' '%HEIGHT%' '171'}}">
+                                                    {{else}}
+                                                        <img width="256" height="171" alt="" src="images/no-img.gif">
+                                                    {{/if}}
+                                                    <a class="showDetails cta" title="{{title}}" href="{{slugify title}}.html">Details</a>
+                                                </div>
+                                                <ul>
+                                                    {{#if price.value}}
+                                                        {{#contains [@xsi.type] "Rent"}}
+                                                            <li>Mietpreis: <span class="rentPrice">{{price.value}}</span>€</li>
+                                                        {{else}}
+                                                            <li>Kaufpreis: <span class="buyPrice">{{price.value}}</span>€</li>
+                                                        {{/contains}}
+                                                    {{/if}}
+                                                    {{#if livingSpace}}<li>Wohnfläche: <span class="livingSpace">{{livingSpace}}</span>m²</li>{{/if}}
+                                                    {{#if numberOfRooms}}<li>Zimmer: <span class="rooms">{{numberOfRooms}}</span></li>{{/if}}
+                                                    {{#if plotArea}}<li>Grundstücksfläche: <span class="plotArea">{{plotArea}}</span>m²</li>{{/if}}
+                                                    {{#if totalFloorSpace}}<li>Bodenfläche: <span class="totalFloorSpace">{{totalFloorSpace}}</span>m²</li>{{/if}}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    {{/contains}}
+                                {{/each}}{{/each}}{{/each}}
+                            </div>
+                        </div>
+                    </div>
+                    {{else}}
+                    <div class="row">
+                        <div class="col x9">
+                            <p>Es wurden zur Zeit keine Immobilien-Angebote gefunden. Bitte versuchen Sie es später noch einmal.</p>
+                        </div>
+                    </div>
+                    {{/if}}
+                </article>
