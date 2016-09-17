@@ -36,6 +36,7 @@ DONE
 - remove noindex, nofollow -
 - use proper email address -
 - google analytics -
+- secure restapi-php-sdk-master -
 
 
 COMMON
@@ -64,7 +65,6 @@ NICE TO HAVE
 JUST BEFORE LIVE
 
 - isotope license
-- secure restapi-php-sdk-master
 
 AFTER LIVE
 
