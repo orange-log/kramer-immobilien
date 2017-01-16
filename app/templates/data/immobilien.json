@@ -2,7 +2,7 @@
    "realestates.realEstates":{
       "Paging":{
          "next":{
-            "@xlink.href":"http:\/\/rest.immobilienscout24.de\/restapi\/api\/offer\/v1.0\/user\/84833\/realestate?oauth_consumer_key=Kramer-Immobilien-GmbHKey&oauth_nonce=d931322b8b52b26622d38dea8de2fe2c&oauth_signature=wTC8EGF%2BP2e4JP22UBIIvdQLlVU%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1482440157&oauth_token=bb79ac75-9059-45e9-aaaf-37da39732cd7&oauth_version=1.0&pagenumber=2"
+            "@xlink.href":"http:\/\/rest.immobilienscout24.de\/restapi\/api\/offer\/v1.0\/user\/84833\/realestate?oauth_consumer_key=Kramer-Immobilien-GmbHKey&oauth_nonce=c5ac92471f7cb73c207a4b1d5ee38b09&oauth_signature=V990QGpQ6jS%2BhYEF21pBPZ53nHg%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1484602514&oauth_token=bb79ac75-9059-45e9-aaaf-37da39732cd7&oauth_version=1.0&pagenumber=2"
          },
          "pageNumber":1,
          "pageSize":20,
@@ -13,102 +13,8 @@
          "realEstateElement":[
             {
                "@xsi.type":"offerlistelement:OfferHouseBuy",
-               "@xlink.href":"http:\/\/rest.immobilienscout24.de\/restapi\/api\/offer\/v1.0\/user\/84833\/realestate\/91634264",
-               "@modification":"2016-12-22T17:29:31.000+01:00",
-               "@creation":"2016-12-08T15:37:09.000+01:00",
-               "@id":"91634264",
-               "externalId":"91634264",
-               "title":"Wochenendhaus im Markengrund - Immer, wie im Urlaub!",
-               "address":{
-                  "street":"Markengrund",
-                  "houseNumber":"00",
-                  "postcode":"33689",
-                  "city":"Bielefeld",
-                  "geoHierarchy":{
-                     "continent":{
-                        "geoCodeId":1,
-                        "fullGeoCodeId":"1"
-                     },
-                     "country":{
-                        "geoCodeId":276,
-                        "fullGeoCodeId":"1276"
-                     },
-                     "region":{
-                        "geoCodeId":10,
-                        "fullGeoCodeId":"1276010"
-                     },
-                     "city":{
-                        "geoCodeId":3,
-                        "fullGeoCodeId":"1276010003"
-                     },
-                     "quarter":{
-                        "geoCodeId":39,
-                        "fullGeoCodeId":"1276010003039"
-                     },
-                     "neighbourhood":{
-                        "geoCodeId":5711000000321
-                     }
-                  }
-               },
-               "realEstateState":"ACTIVE",
-               "titlePicture":{
-                  "@id":"-1",
-                  "title":"Carport & Haus",
-                  "floorplan":"false",
-                  "titlePicture":"true",
-                  "urls":[
-                     {
-                        "url":[
-                           {
-                              "@scale":"SCALE_118x118",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig03\/N\/545\/488\/686\/545488686-0.png\/ORIG\/resize\/118x118%3E\/extent\/118x118\/format\/jpg"
-                           },
-                           {
-                              "@scale":"SCALE_210x210",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig03\/N\/545\/488\/686\/545488686-0.png\/ORIG\/resize\/210x210%3E\/format\/jpg"
-                           },
-                           {
-                              "@scale":"SCALE",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig03\/N\/545\/488\/686\/545488686-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/format\/jpg"
-                           },
-                           {
-                              "@scale":"SCALE_AND_CROP",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig03\/N\/545\/488\/686\/545488686-0.png\/ORIG\/legacy_thumbnail\/%WIDTH%x%HEIGHT%\/format\/jpg"
-                           },
-                           {
-                              "@scale":"WHITE_FILLING",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig03\/N\/545\/488\/686\/545488686-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/extent\/%WIDTH%x%HEIGHT%\/format\/jpg"
-                           }
-                        ]
-                     }
-                  ]
-               },
-               "common.publishChannels":[
-                  {
-                     "publishChannel":[
-                        {
-                           "@id":"10000",
-                           "@title":"Immobilienscout24"
-                        },
-                        {
-                           "@id":"10001",
-                           "@title":"Homepage"
-                        }
-                     ]
-                  }
-               ],
-               "price":{
-                  "value":95000,
-                  "currency":"EUR"
-               },
-               "livingSpace":68,
-               "plotArea":1500,
-               "numberOfRooms":2
-            },
-            {
-               "@xsi.type":"offerlistelement:OfferHouseBuy",
                "@xlink.href":"http:\/\/rest.immobilienscout24.de\/restapi\/api\/offer\/v1.0\/user\/84833\/realestate\/90162091",
-               "@modification":"2016-12-22T15:53:48.000+01:00",
+               "@modification":"2017-01-13T15:51:08.000+01:00",
                "@creation":"2016-09-08T15:01:50.000+02:00",
                "@id":"90162091",
                "externalId":"90162091",
@@ -201,17 +107,17 @@
             },
             {
                "@xsi.type":"offerlistelement:OfferHouseBuy",
-               "@xlink.href":"http:\/\/rest.immobilienscout24.de\/restapi\/api\/offer\/v1.0\/user\/84833\/realestate\/91732353",
-               "@modification":"2016-12-22T15:52:02.000+01:00",
-               "@creation":"2016-11-28T14:57:44.000+01:00",
-               "@id":"91732353",
-               "externalId":"91732353",
-               "title":"Knusperhäuschen im Wald",
+               "@xlink.href":"http:\/\/rest.immobilienscout24.de\/restapi\/api\/offer\/v1.0\/user\/84833\/realestate\/89282140",
+               "@modification":"2017-01-13T15:36:41.000+01:00",
+               "@creation":"2016-07-08T14:45:01.000+02:00",
+               "@id":"89282140",
+               "externalId":"89282140",
+               "title":"Wochenendhaus-hier haben Sie Ihre Ruhe!",
                "address":{
-                  "street":"Bachstraße",
-                  "houseNumber":"117",
-                  "postcode":"33813",
-                  "city":"Oerlinghausen",
+                  "street":"Markengrund",
+                  "houseNumber":"253",
+                  "postcode":"33689",
+                  "city":"Bielefeld",
                   "geoHierarchy":{
                      "continent":{
                         "geoCodeId":1,
@@ -226,22 +132,22 @@
                         "fullGeoCodeId":"1276010"
                      },
                      "city":{
-                        "geoCodeId":30,
-                        "fullGeoCodeId":"1276010030"
+                        "geoCodeId":3,
+                        "fullGeoCodeId":"1276010003"
                      },
                      "quarter":{
-                        "geoCodeId":14,
-                        "fullGeoCodeId":"1276010030014"
+                        "geoCodeId":39,
+                        "fullGeoCodeId":"1276010003039"
                      },
                      "neighbourhood":{
-                        "geoCodeId":5766056000011
+                        "geoCodeId":5711000000321
                      }
                   }
                },
-               "realEstateState":"ACTIVE",
+               "realEstateState":"INACTIVE",
                "titlePicture":{
                   "@id":"-1",
-                  "title":"Wohnzimmer",
+                  "title":"Hausansicht",
                   "floorplan":"false",
                   "titlePicture":"true",
                   "urls":[
@@ -249,23 +155,103 @@
                         "url":[
                            {
                               "@scale":"SCALE_118x118",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/537\/902\/207\/537902207-0.png\/ORIG\/resize\/118x118%3E\/extent\/118x118\/format\/jpg"
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig01\/N\/501\/247\/636\/501247636-0.jpg\/ORIG\/resize\/118x118%3E\/extent\/118x118\/format\/jpg"
                            },
                            {
                               "@scale":"SCALE_210x210",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/537\/902\/207\/537902207-0.png\/ORIG\/resize\/210x210%3E\/format\/jpg"
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig01\/N\/501\/247\/636\/501247636-0.jpg\/ORIG\/resize\/210x210%3E\/format\/jpg"
                            },
                            {
                               "@scale":"SCALE",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/537\/902\/207\/537902207-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/format\/jpg"
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig01\/N\/501\/247\/636\/501247636-0.jpg\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/format\/jpg"
                            },
                            {
                               "@scale":"SCALE_AND_CROP",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/537\/902\/207\/537902207-0.png\/ORIG\/legacy_thumbnail\/%WIDTH%x%HEIGHT%\/format\/jpg"
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig01\/N\/501\/247\/636\/501247636-0.jpg\/ORIG\/legacy_thumbnail\/%WIDTH%x%HEIGHT%\/format\/jpg"
                            },
                            {
                               "@scale":"WHITE_FILLING",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/537\/902\/207\/537902207-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/extent\/%WIDTH%x%HEIGHT%\/format\/jpg"
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig01\/N\/501\/247\/636\/501247636-0.jpg\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/extent\/%WIDTH%x%HEIGHT%\/format\/jpg"
+                           }
+                        ]
+                     }
+                  ]
+               },
+               "price":{
+                  "value":85000,
+                  "currency":"EUR"
+               },
+               "livingSpace":50,
+               "plotArea":1375,
+               "numberOfRooms":2
+            },
+            {
+               "@xsi.type":"offerlistelement:OfferHouseBuy",
+               "@xlink.href":"http:\/\/rest.immobilienscout24.de\/restapi\/api\/offer\/v1.0\/user\/84833\/realestate\/91634264",
+               "@modification":"2017-01-12T13:13:35.000+01:00",
+               "@creation":"2016-12-08T15:37:09.000+01:00",
+               "@id":"91634264",
+               "externalId":"91634264",
+               "title":"Wochenendhaus im Markengrund - Immer, wie im Urlaub!",
+               "address":{
+                  "street":"Markengrund",
+                  "houseNumber":"00",
+                  "postcode":"33689",
+                  "city":"Bielefeld",
+                  "geoHierarchy":{
+                     "continent":{
+                        "geoCodeId":1,
+                        "fullGeoCodeId":"1"
+                     },
+                     "country":{
+                        "geoCodeId":276,
+                        "fullGeoCodeId":"1276"
+                     },
+                     "region":{
+                        "geoCodeId":10,
+                        "fullGeoCodeId":"1276010"
+                     },
+                     "city":{
+                        "geoCodeId":3,
+                        "fullGeoCodeId":"1276010003"
+                     },
+                     "quarter":{
+                        "geoCodeId":39,
+                        "fullGeoCodeId":"1276010003039"
+                     },
+                     "neighbourhood":{
+                        "geoCodeId":5711000000321
+                     }
+                  }
+               },
+               "realEstateState":"ACTIVE",
+               "titlePicture":{
+                  "@id":"-1",
+                  "title":"Carport & Haus",
+                  "floorplan":"false",
+                  "titlePicture":"true",
+                  "urls":[
+                     {
+                        "url":[
+                           {
+                              "@scale":"SCALE_118x118",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig03\/N\/545\/488\/686\/545488686-0.png\/ORIG\/resize\/118x118%3E\/extent\/118x118\/format\/jpg"
+                           },
+                           {
+                              "@scale":"SCALE_210x210",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig03\/N\/545\/488\/686\/545488686-0.png\/ORIG\/resize\/210x210%3E\/format\/jpg"
+                           },
+                           {
+                              "@scale":"SCALE",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig03\/N\/545\/488\/686\/545488686-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/format\/jpg"
+                           },
+                           {
+                              "@scale":"SCALE_AND_CROP",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig03\/N\/545\/488\/686\/545488686-0.png\/ORIG\/legacy_thumbnail\/%WIDTH%x%HEIGHT%\/format\/jpg"
+                           },
+                           {
+                              "@scale":"WHITE_FILLING",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig03\/N\/545\/488\/686\/545488686-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/extent\/%WIDTH%x%HEIGHT%\/format\/jpg"
                            }
                         ]
                      }
@@ -286,175 +272,17 @@
                   }
                ],
                "price":{
-                  "value":98000,
+                  "value":95000,
                   "currency":"EUR"
                },
-               "livingSpace":72,
-               "plotArea":1000,
-               "numberOfRooms":3
-            },
-            {
-               "@xsi.type":"offerlistelement:OfferOffice",
-               "@xlink.href":"http:\/\/rest.immobilienscout24.de\/restapi\/api\/offer\/v1.0\/user\/84833\/realestate\/89769051",
-               "@modification":"2016-12-21T13:20:09.000+01:00",
-               "@creation":"2016-08-11T15:22:38.000+02:00",
-               "@id":"89769051",
-               "externalId":"89769051",
-               "title":"Bürohaus mit PKW-Stellplätzen und guter Verkehrsanbindung!",
-               "address":{
-                  "street":"Am Buschhof",
-                  "houseNumber":"2a",
-                  "postcode":"33689",
-                  "city":"Bielefeld",
-                  "geoHierarchy":{
-                     "continent":{
-                        "geoCodeId":1,
-                        "fullGeoCodeId":"1"
-                     },
-                     "country":{
-                        "geoCodeId":276,
-                        "fullGeoCodeId":"1276"
-                     },
-                     "region":{
-                        "geoCodeId":10,
-                        "fullGeoCodeId":"1276010"
-                     },
-                     "city":{
-                        "geoCodeId":3,
-                        "fullGeoCodeId":"1276010003"
-                     },
-                     "quarter":{
-                        "geoCodeId":39,
-                        "fullGeoCodeId":"1276010003039"
-                     },
-                     "neighbourhood":{
-                        "geoCodeId":5711000000322
-                     }
-                  }
-               },
-               "realEstateState":"INACTIVE",
-               "titlePicture":{
-                  "@id":"-1",
-                  "title":"IMG_8264",
-                  "floorplan":"false",
-                  "titlePicture":"true",
-                  "urls":[
-                     {
-                        "url":[
-                           {
-                              "@scale":"SCALE_118x118",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/510\/283\/567\/510283567-0.png\/ORIG\/resize\/118x118%3E\/extent\/118x118\/format\/jpg"
-                           },
-                           {
-                              "@scale":"SCALE_210x210",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/510\/283\/567\/510283567-0.png\/ORIG\/resize\/210x210%3E\/format\/jpg"
-                           },
-                           {
-                              "@scale":"SCALE",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/510\/283\/567\/510283567-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/format\/jpg"
-                           },
-                           {
-                              "@scale":"SCALE_AND_CROP",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/510\/283\/567\/510283567-0.png\/ORIG\/legacy_thumbnail\/%WIDTH%x%HEIGHT%\/format\/jpg"
-                           },
-                           {
-                              "@scale":"WHITE_FILLING",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/510\/283\/567\/510283567-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/extent\/%WIDTH%x%HEIGHT%\/format\/jpg"
-                           }
-                        ]
-                     }
-                  ]
-               },
-               "price":{
-                  "value":130000,
-                  "currency":"EUR"
-               },
-               "netFloorSpace":146
-            },
-            {
-               "@xsi.type":"offerlistelement:OfferHouseBuy",
-               "@xlink.href":"http:\/\/rest.immobilienscout24.de\/restapi\/api\/offer\/v1.0\/user\/84833\/realestate\/91513030",
-               "@modification":"2016-12-21T13:18:56.000+01:00",
-               "@creation":"2016-12-05T10:39:22.000+01:00",
-               "@id":"91513030",
-               "externalId":"91513030",
-               "title":"Bürohaus mit PKW-Stellplätzen und guter Verkehrsanbindung!",
-               "address":{
-                  "street":"Am Buschhof",
-                  "houseNumber":"2a",
-                  "postcode":"33689",
-                  "city":"Bielefeld",
-                  "geoHierarchy":{
-                     "continent":{
-                        "geoCodeId":1,
-                        "fullGeoCodeId":"1"
-                     },
-                     "country":{
-                        "geoCodeId":276,
-                        "fullGeoCodeId":"1276"
-                     },
-                     "region":{
-                        "geoCodeId":10,
-                        "fullGeoCodeId":"1276010"
-                     },
-                     "city":{
-                        "geoCodeId":3,
-                        "fullGeoCodeId":"1276010003"
-                     },
-                     "quarter":{
-                        "geoCodeId":39,
-                        "fullGeoCodeId":"1276010003039"
-                     },
-                     "neighbourhood":{
-                        "geoCodeId":5711000000322
-                     }
-                  }
-               },
-               "realEstateState":"INACTIVE",
-               "titlePicture":{
-                  "@id":"-1",
-                  "title":"Büro",
-                  "floorplan":"false",
-                  "titlePicture":"true",
-                  "urls":[
-                     {
-                        "url":[
-                           {
-                              "@scale":"SCALE_118x118",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig02\/N\/540\/538\/21\/540538021-0.png\/ORIG\/resize\/118x118%3E\/extent\/118x118\/format\/jpg"
-                           },
-                           {
-                              "@scale":"SCALE_210x210",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig02\/N\/540\/538\/21\/540538021-0.png\/ORIG\/resize\/210x210%3E\/format\/jpg"
-                           },
-                           {
-                              "@scale":"SCALE",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig02\/N\/540\/538\/21\/540538021-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/format\/jpg"
-                           },
-                           {
-                              "@scale":"SCALE_AND_CROP",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig02\/N\/540\/538\/21\/540538021-0.png\/ORIG\/legacy_thumbnail\/%WIDTH%x%HEIGHT%\/format\/jpg"
-                           },
-                           {
-                              "@scale":"WHITE_FILLING",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig02\/N\/540\/538\/21\/540538021-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/extent\/%WIDTH%x%HEIGHT%\/format\/jpg"
-                           }
-                        ]
-                     }
-                  ]
-               },
-               "price":{
-                  "value":130000,
-                  "currency":"EUR"
-               },
-               "livingSpace":146,
-               "plotArea":176,
-               "numberOfRooms":5
+               "livingSpace":68,
+               "plotArea":1500,
+               "numberOfRooms":2
             },
             {
                "@xsi.type":"offerlistelement:OfferApartmentBuy",
                "@xlink.href":"http:\/\/rest.immobilienscout24.de\/restapi\/api\/offer\/v1.0\/user\/84833\/realestate\/91110696",
-               "@modification":"2016-12-21T09:11:31.000+01:00",
+               "@modification":"2017-01-04T22:14:11.000+01:00",
                "@creation":"2016-11-03T16:29:27.000+01:00",
                "@id":"91110696",
                "externalId":"91110696",
@@ -546,6 +374,258 @@
             },
             {
                "@xsi.type":"offerlistelement:OfferHouseBuy",
+               "@xlink.href":"http:\/\/rest.immobilienscout24.de\/restapi\/api\/offer\/v1.0\/user\/84833\/realestate\/91732353",
+               "@modification":"2016-12-31T22:21:06.000+01:00",
+               "@creation":"2016-11-28T14:57:44.000+01:00",
+               "@id":"91732353",
+               "externalId":"91732353",
+               "title":"Knusperhäuschen im Wald",
+               "address":{
+                  "street":"Bachstraße",
+                  "houseNumber":"117",
+                  "postcode":"33813",
+                  "city":"Oerlinghausen",
+                  "geoHierarchy":{
+                     "continent":{
+                        "geoCodeId":1,
+                        "fullGeoCodeId":"1"
+                     },
+                     "country":{
+                        "geoCodeId":276,
+                        "fullGeoCodeId":"1276"
+                     },
+                     "region":{
+                        "geoCodeId":10,
+                        "fullGeoCodeId":"1276010"
+                     },
+                     "city":{
+                        "geoCodeId":30,
+                        "fullGeoCodeId":"1276010030"
+                     },
+                     "quarter":{
+                        "geoCodeId":14,
+                        "fullGeoCodeId":"1276010030014"
+                     },
+                     "neighbourhood":{
+                        "geoCodeId":5766056000011
+                     }
+                  }
+               },
+               "realEstateState":"ACTIVE",
+               "titlePicture":{
+                  "@id":"-1",
+                  "title":"Wohnzimmer",
+                  "floorplan":"false",
+                  "titlePicture":"true",
+                  "urls":[
+                     {
+                        "url":[
+                           {
+                              "@scale":"SCALE_118x118",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/537\/902\/207\/537902207-0.png\/ORIG\/resize\/118x118%3E\/extent\/118x118\/format\/jpg"
+                           },
+                           {
+                              "@scale":"SCALE_210x210",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/537\/902\/207\/537902207-0.png\/ORIG\/resize\/210x210%3E\/format\/jpg"
+                           },
+                           {
+                              "@scale":"SCALE",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/537\/902\/207\/537902207-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/format\/jpg"
+                           },
+                           {
+                              "@scale":"SCALE_AND_CROP",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/537\/902\/207\/537902207-0.png\/ORIG\/legacy_thumbnail\/%WIDTH%x%HEIGHT%\/format\/jpg"
+                           },
+                           {
+                              "@scale":"WHITE_FILLING",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/537\/902\/207\/537902207-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/extent\/%WIDTH%x%HEIGHT%\/format\/jpg"
+                           }
+                        ]
+                     }
+                  ]
+               },
+               "common.publishChannels":[
+                  {
+                     "publishChannel":[
+                        {
+                           "@id":"10000",
+                           "@title":"Immobilienscout24"
+                        },
+                        {
+                           "@id":"10001",
+                           "@title":"Homepage"
+                        }
+                     ]
+                  }
+               ],
+               "price":{
+                  "value":98000,
+                  "currency":"EUR"
+               },
+               "livingSpace":72,
+               "plotArea":1000,
+               "numberOfRooms":3
+            },
+            {
+               "@xsi.type":"offerlistelement:OfferHouseBuy",
+               "@xlink.href":"http:\/\/rest.immobilienscout24.de\/restapi\/api\/offer\/v1.0\/user\/84833\/realestate\/91513030",
+               "@modification":"2016-12-29T12:50:49.000+01:00",
+               "@creation":"2016-12-05T10:39:22.000+01:00",
+               "@id":"91513030",
+               "externalId":"91513030",
+               "title":"EFH\/ Bürohaus mit PKW-Stellplätzen und guter Verkehrsanbindung!",
+               "address":{
+                  "street":"Am Buschhof",
+                  "houseNumber":"2a",
+                  "postcode":"33689",
+                  "city":"Bielefeld",
+                  "geoHierarchy":{
+                     "continent":{
+                        "geoCodeId":1,
+                        "fullGeoCodeId":"1"
+                     },
+                     "country":{
+                        "geoCodeId":276,
+                        "fullGeoCodeId":"1276"
+                     },
+                     "region":{
+                        "geoCodeId":10,
+                        "fullGeoCodeId":"1276010"
+                     },
+                     "city":{
+                        "geoCodeId":3,
+                        "fullGeoCodeId":"1276010003"
+                     },
+                     "quarter":{
+                        "geoCodeId":39,
+                        "fullGeoCodeId":"1276010003039"
+                     },
+                     "neighbourhood":{
+                        "geoCodeId":5711000000322
+                     }
+                  }
+               },
+               "realEstateState":"INACTIVE",
+               "titlePicture":{
+                  "@id":"-1",
+                  "title":"Büro",
+                  "floorplan":"false",
+                  "titlePicture":"true",
+                  "urls":[
+                     {
+                        "url":[
+                           {
+                              "@scale":"SCALE_118x118",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig02\/N\/540\/538\/21\/540538021-0.png\/ORIG\/resize\/118x118%3E\/extent\/118x118\/format\/jpg"
+                           },
+                           {
+                              "@scale":"SCALE_210x210",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig02\/N\/540\/538\/21\/540538021-0.png\/ORIG\/resize\/210x210%3E\/format\/jpg"
+                           },
+                           {
+                              "@scale":"SCALE",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig02\/N\/540\/538\/21\/540538021-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/format\/jpg"
+                           },
+                           {
+                              "@scale":"SCALE_AND_CROP",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig02\/N\/540\/538\/21\/540538021-0.png\/ORIG\/legacy_thumbnail\/%WIDTH%x%HEIGHT%\/format\/jpg"
+                           },
+                           {
+                              "@scale":"WHITE_FILLING",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig02\/N\/540\/538\/21\/540538021-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/extent\/%WIDTH%x%HEIGHT%\/format\/jpg"
+                           }
+                        ]
+                     }
+                  ]
+               },
+               "price":{
+                  "value":130000,
+                  "currency":"EUR"
+               },
+               "livingSpace":146,
+               "plotArea":176,
+               "numberOfRooms":5
+            },
+            {
+               "@xsi.type":"offerlistelement:OfferOffice",
+               "@xlink.href":"http:\/\/rest.immobilienscout24.de\/restapi\/api\/offer\/v1.0\/user\/84833\/realestate\/89769051",
+               "@modification":"2016-12-21T13:20:09.000+01:00",
+               "@creation":"2016-08-11T15:22:38.000+02:00",
+               "@id":"89769051",
+               "externalId":"89769051",
+               "title":"Bürohaus mit PKW-Stellplätzen und guter Verkehrsanbindung!",
+               "address":{
+                  "street":"Am Buschhof",
+                  "houseNumber":"2a",
+                  "postcode":"33689",
+                  "city":"Bielefeld",
+                  "geoHierarchy":{
+                     "continent":{
+                        "geoCodeId":1,
+                        "fullGeoCodeId":"1"
+                     },
+                     "country":{
+                        "geoCodeId":276,
+                        "fullGeoCodeId":"1276"
+                     },
+                     "region":{
+                        "geoCodeId":10,
+                        "fullGeoCodeId":"1276010"
+                     },
+                     "city":{
+                        "geoCodeId":3,
+                        "fullGeoCodeId":"1276010003"
+                     },
+                     "quarter":{
+                        "geoCodeId":39,
+                        "fullGeoCodeId":"1276010003039"
+                     },
+                     "neighbourhood":{
+                        "geoCodeId":5711000000322
+                     }
+                  }
+               },
+               "realEstateState":"INACTIVE",
+               "titlePicture":{
+                  "@id":"-1",
+                  "title":"IMG_8264",
+                  "floorplan":"false",
+                  "titlePicture":"true",
+                  "urls":[
+                     {
+                        "url":[
+                           {
+                              "@scale":"SCALE_118x118",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/510\/283\/567\/510283567-0.png\/ORIG\/resize\/118x118%3E\/extent\/118x118\/format\/jpg"
+                           },
+                           {
+                              "@scale":"SCALE_210x210",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/510\/283\/567\/510283567-0.png\/ORIG\/resize\/210x210%3E\/format\/jpg"
+                           },
+                           {
+                              "@scale":"SCALE",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/510\/283\/567\/510283567-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/format\/jpg"
+                           },
+                           {
+                              "@scale":"SCALE_AND_CROP",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/510\/283\/567\/510283567-0.png\/ORIG\/legacy_thumbnail\/%WIDTH%x%HEIGHT%\/format\/jpg"
+                           },
+                           {
+                              "@scale":"WHITE_FILLING",
+                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/510\/283\/567\/510283567-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/extent\/%WIDTH%x%HEIGHT%\/format\/jpg"
+                           }
+                        ]
+                     }
+                  ]
+               },
+               "price":{
+                  "value":130000,
+                  "currency":"EUR"
+               },
+               "netFloorSpace":146
+            },
+            {
+               "@xsi.type":"offerlistelement:OfferHouseBuy",
                "@xlink.href":"http:\/\/rest.immobilienscout24.de\/restapi\/api\/offer\/v1.0\/user\/84833\/realestate\/90039971",
                "@modification":"2016-12-14T14:54:31.000+01:00",
                "@creation":"2016-08-31T12:47:22.000+02:00",
@@ -623,100 +703,6 @@
                "livingSpace":115,
                "plotArea":731,
                "numberOfRooms":5
-            },
-            {
-               "@xsi.type":"offerlistelement:OfferHouseBuy",
-               "@xlink.href":"http:\/\/rest.immobilienscout24.de\/restapi\/api\/offer\/v1.0\/user\/84833\/realestate\/89282140",
-               "@modification":"2016-12-13T22:14:08.000+01:00",
-               "@creation":"2016-07-08T14:45:01.000+02:00",
-               "@id":"89282140",
-               "externalId":"89282140",
-               "title":"Wochenendhaus-hier haben Sie Ihre Ruhe!",
-               "address":{
-                  "street":"Markengrund",
-                  "houseNumber":"253",
-                  "postcode":"33689",
-                  "city":"Bielefeld",
-                  "geoHierarchy":{
-                     "continent":{
-                        "geoCodeId":1,
-                        "fullGeoCodeId":"1"
-                     },
-                     "country":{
-                        "geoCodeId":276,
-                        "fullGeoCodeId":"1276"
-                     },
-                     "region":{
-                        "geoCodeId":10,
-                        "fullGeoCodeId":"1276010"
-                     },
-                     "city":{
-                        "geoCodeId":3,
-                        "fullGeoCodeId":"1276010003"
-                     },
-                     "quarter":{
-                        "geoCodeId":39,
-                        "fullGeoCodeId":"1276010003039"
-                     },
-                     "neighbourhood":{
-                        "geoCodeId":5711000000321
-                     }
-                  }
-               },
-               "realEstateState":"ACTIVE",
-               "titlePicture":{
-                  "@id":"-1",
-                  "title":"Hausansicht",
-                  "floorplan":"false",
-                  "titlePicture":"true",
-                  "urls":[
-                     {
-                        "url":[
-                           {
-                              "@scale":"SCALE_118x118",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig01\/N\/501\/247\/636\/501247636-0.jpg\/ORIG\/resize\/118x118%3E\/extent\/118x118\/format\/jpg"
-                           },
-                           {
-                              "@scale":"SCALE_210x210",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig01\/N\/501\/247\/636\/501247636-0.jpg\/ORIG\/resize\/210x210%3E\/format\/jpg"
-                           },
-                           {
-                              "@scale":"SCALE",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig01\/N\/501\/247\/636\/501247636-0.jpg\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/format\/jpg"
-                           },
-                           {
-                              "@scale":"SCALE_AND_CROP",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig01\/N\/501\/247\/636\/501247636-0.jpg\/ORIG\/legacy_thumbnail\/%WIDTH%x%HEIGHT%\/format\/jpg"
-                           },
-                           {
-                              "@scale":"WHITE_FILLING",
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig01\/N\/501\/247\/636\/501247636-0.jpg\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/extent\/%WIDTH%x%HEIGHT%\/format\/jpg"
-                           }
-                        ]
-                     }
-                  ]
-               },
-               "common.publishChannels":[
-                  {
-                     "publishChannel":[
-                        {
-                           "@id":"10000",
-                           "@title":"Immobilienscout24"
-                        },
-                        {
-                           "@id":"10001",
-                           "@title":"Homepage"
-                        }
-                     ]
-                  }
-               ],
-               "price":{
-                  "value":85000,
-                  "currency":"EUR"
-               },
-               "livingSpace":50,
-               "plotArea":1375,
-               "numberOfRooms":2
             },
             {
                "@xsi.type":"offerlistelement:OfferApartmentBuy",
