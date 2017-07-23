@@ -31,7 +31,7 @@ description: "Baugrundstück | Eigentumswohnung | Garage | Haus | Mietwohnung"
                                 <button data-filter=".OfferHouseBuy"><strong>Haus</strong></button>
                                 <!--button data-filter=".OfferInvestment"><strong>Investment</strong></button-->
                                 <!--button data-filter=".OfferHouseRent"><strong>Mietshaus</strong></button-->
-                                <!--button data-filter=".OfferApartmentRent"><strong>Mietwohnung</strong></button-->
+                                <button data-filter=".OfferApartmentRent"><strong>Mietwohnung</strong></button>
                                 <!--button data-filter=".OfferOffice"><strong>Bürohaus</strong></button-->
                                 <!--button data-filter=".OfferSpecialPurpose"><strong>Sonderzweck</strong></button-->
                             </div>
@@ -79,8 +79,8 @@ description: "Baugrundstück | Eigentumswohnung | Garage | Haus | Mietwohnung"
                                                 </h2>
                                                 <h3>{{address.postcode}} {{address.city}}</h3>
                                                 <div class="inner__imgWrapper">
-                                                    {{#if titlePicture.urls.0.url.2.[@href]}}
-                                                        <img width="256" height="171" alt="" src="{{replaceStr titlePicture.urls.0.url.2.[@href] '%WIDTH%' '256' '%HEIGHT%' '171'}}">
+                                                    {{#if titlePicture.urls.0.url.0.[@href]}}
+                                                        <img width="256" height="171" alt="" src="{{replaceStr titlePicture.urls.0.url.0.[@href] '%WIDTH%' '256' '%HEIGHT%' '171'}}">
                                                     {{else}}
                                                         <img width="256" height="171" alt="" src="images/no-img.gif">
                                                     {{/if}}
