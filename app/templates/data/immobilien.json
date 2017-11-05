@@ -87,34 +87,6 @@
                "numberOfRooms":2
             },
             {
-               "@xsi.type":"offerlistelement:OfferHouseBuy",
-               "@creation":"2016-11-30T11:58:20.000+01:00",
-               "@id":"91732353",
-               "title":"Schönes Wochenendhaus am Waldesrand",
-               "address":{
-                  "postcode":"33813",
-                  "city":"Oerlinghausen"
-               },
-               "realEstateState":"ACTIVE",
-               "titlePicture":{
-                  "urls":[
-                     {
-                        "url":[
-                           {
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig04\/N\/537\/902\/207\/537902207-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/format\/jpg"
-                           }
-                        ]
-                     }
-                  ]
-               },
-               "price":{
-                  "value":98000
-               },
-               "livingSpace":72,
-               "plotArea":1000,
-               "numberOfRooms":3
-            },
-            {
                "@xsi.type":"offerlistelement:OfferApartmentRent",
                "@creation":"2017-07-18T10:44:34.000+02:00",
                "@id":"97248495",
@@ -139,60 +111,6 @@
                   "value":380
                },
                "livingSpace":76,
-               "numberOfRooms":3
-            },
-            {
-               "@xsi.type":"offerlistelement:OfferApartmentRent",
-               "@creation":"2017-07-18T10:45:27.000+02:00",
-               "@id":"97203635",
-               "title":"Schöne 5-Zi Wohnung mit Garten",
-               "address":{
-                  "postcode":"32657",
-                  "city":"Lemgo"
-               },
-               "realEstateState":"ACTIVE",
-               "titlePicture":{
-                  "urls":[
-                     {
-                        "url":[
-                           {
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig01\/N\/603\/458\/240\/603458240-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/format\/jpg"
-                           }
-                        ]
-                     }
-                  ]
-               },
-               "price":{
-                  "value":450
-               },
-               "livingSpace":94,
-               "numberOfRooms":5
-            },
-            {
-               "@xsi.type":"offerlistelement:OfferApartmentBuy",
-               "@creation":"2017-07-03T12:46:41.000+02:00",
-               "@id":"96882266",
-               "title":"Schöne 3-Zi-Wohnung in Sennestadt",
-               "address":{
-                  "postcode":"33689",
-                  "city":"Bielefeld"
-               },
-               "realEstateState":"ACTIVE",
-               "titlePicture":{
-                  "urls":[
-                     {
-                        "url":[
-                           {
-                              "@href":"https:\/\/pictureis24-a.akamaihd.net\/pic\/orig03\/N\/599\/513\/766\/599513766-0.png\/ORIG\/resize\/%WIDTH%x%HEIGHT%%3E\/format\/jpg"
-                           }
-                        ]
-                     }
-                  ]
-               },
-               "price":{
-                  "value":55000
-               },
-               "livingSpace":64,
                "numberOfRooms":3
             }
          ]
