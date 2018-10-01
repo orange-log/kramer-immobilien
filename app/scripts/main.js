@@ -1,6 +1,7 @@
 /************* GOOGLE MAPS *************/
 
 /* jshint ignore:start */
+/*
 $(function() {
 
     var map;
@@ -46,6 +47,7 @@ $(function() {
     google.maps.event.addDomListener(window, 'load', initialize);
 
 });
+*/
 /* jshint ignore:end */
 
 $(function() {
@@ -401,7 +403,7 @@ $(function() {
                     setTimeout(function(){
                         $.scrollTo($item, 800, {offset: -75, onAfter: function(){
                             $.address.value('/Angebote');
-                        }});     
+                        }});
                     }, 500);
                 }
             });
@@ -481,7 +483,7 @@ $(function() {
 
             // scroll to item
             setTimeout(function(){
-                $.scrollTo($t.closest('.item'), 800, {offset: -75});     
+                $.scrollTo($t.closest('.item'), 800, {offset: -75});
             }, 500);
 
             // show error message
@@ -492,7 +494,7 @@ $(function() {
             $.address.value($t.attr('href').replace('.html',''));
 
         });
-        
+
     });
 
     /************* CTA *************/
@@ -500,7 +502,7 @@ $(function() {
     $('#isotope').on('click', '.cta--details', function(e) {
         e.preventDefault();
         var $t = $(this);
-        $.scrollTo(0, 800, { 
+        $.scrollTo(0, 800, {
             onAfter:function() {
                 $('[href=#Kontakt]').not('.active').click();
                 $('#contact_name').focus();
@@ -607,7 +609,7 @@ $(function() {
     $('.a-z .schwarz').click(function(e){
         e.preventDefault();
         var $t = $(this);
-        $.scrollTo($t.attr('href'), 800, {offset: -75});     
+        $.scrollTo($t.attr('href'), 800, {offset: -75});
     });
 
 });
