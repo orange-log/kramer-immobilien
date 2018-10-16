@@ -9,6 +9,26 @@
         }
     .right {
         text-align: right;
+        a {
+            position: relative;
+            overflow: hidden;
+            text-indent: -9999px;
+            display: inline-block;
+            width: 1.5em;
+            &:hover {
+                background: none !important;
+                }
+            &:after {
+                content: '\e804';
+                position: absolute;
+                right: 0;
+                top: 50%;
+                font-size: 1.5em;
+                text-indent: 0;
+                margin-top: -.5em;
+                margin-right: 0;
+                }
+            }
         }
     p {
     color: #999;
